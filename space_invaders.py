@@ -9,13 +9,13 @@ pygame.init()
 # pygame.event.__init__()
 screen = pygame.display.set_mode((1000, 700))
 
-playerimg = pygame.image.load('images/spaceship2.png')
+playerimg = pygame.image.load('images/space_invaders_images/spaceship2.png')
 playerx = 470
 playery = 620
 playerx_change = 0
 playery_change = 0
 
-bulletimg = pygame.image.load('images/bullet.png')
+bulletimg = pygame.image.load('images/space_invaders_images/bullet.png')
 bulletx = 0
 bullety = 620
 bulletx_change = 0
@@ -29,7 +29,7 @@ alienx_change = []
 alieny_change = []
 no_of_aliens = 6
 for i in range(no_of_aliens):
-    alienimg.append(pygame.image.load('images/arcade.jpg'))
+    alienimg.append(pygame.image.load('images/space_invaders_images/arcade.jpg'))
     alienx.append(random.randint(0, 900))
     alieny.append(random.randint(0, 550))
     alienx_change.append(25)
@@ -82,13 +82,13 @@ def iscollision(alienx, alieny, bulletx, bullety):
 # mixer.music.load('The-Island-of-Dr-Sinister.mp3')
 # mixer.music.play(-1)
 pygame.display.set_caption("Space Invaders")
-icon = pygame.image.load('images/spaceship.png')
+icon = pygame.image.load('images/space_invaders_images/spaceship.png')
 pygame.display.set_icon(icon)
 
 run = True
 while run:
     screen.fill((0, 0, 0))
-    background = pygame.image.load('images/bgnd.png')
+    background = pygame.image.load('images/space_invaders_images/bgnd.png')
     screen.blit(background, (0, 0))
 
     for event in pygame.event.get():
