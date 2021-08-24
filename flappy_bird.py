@@ -6,7 +6,7 @@ pygame.init()
 
 screen = pygame.display.set_mode((300, 450))
 pygame.display.set_caption("FLAPPYBIRD")
-icon = pygame.image.load("1.png")
+icon = pygame.image.load("images/flappy_bird_images/1.png")
 pygame.display.set_icon(icon)
 
 b_x = 0
@@ -14,12 +14,12 @@ b_xchange = 0
 
 
 def background():
-    bg_img = pygame.image.load("bg.png")
+    bg_img = pygame.image.load("images/flappy_bird_images/bg.png")
     screen.blit(bg_img, (0, 0))
 
 
 def base(b_x):
-    base_img = pygame.image.load("base.png")
+    base_img = pygame.image.load("images/flappy_bird_images/base.png")
     for i in range(50):
         screen.blit(base_img, (b_x, 380))
         b_x += 300
@@ -30,8 +30,8 @@ pipey_down = [random.randint(230, 300), random.randint(230, 300)]
 pipey_up = [random.randint(-100, -30), random.randint(-100, -30)]
 pipex_change = 0
 
-pipe_down_img = [pygame.image.load("pipe_down.png"), pygame.image.load("pipe_down.png")]
-pipe_up_img = [pygame.image.load("pipe_up.png"), pygame.image.load("pipe_up.png")]
+pipe_down_img = [pygame.image.load("images/flappy_bird_images/pipe_down.png"), pygame.image.load("images/flappy_bird_images/pipe_down.png")]
+pipe_up_img = [pygame.image.load("images/flappy_bird_images/pipe_up.png"), pygame.image.load("images/flappy_bird_images/pipe_up.png")]
 
 
 def pipe_down(x, y, i):
@@ -57,7 +57,7 @@ birdy_change = 0
 
 
 def bird(birdx, birdy):
-    bird_img = pygame.image.load("bird.png")
+    bird_img = pygame.image.load("images/flappy_bird_images/bird.png")
     screen.blit(bird_img, (birdx, birdy))
 
 
