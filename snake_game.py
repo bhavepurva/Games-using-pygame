@@ -95,8 +95,8 @@ while run:
         food_y = random.randint(20, 580)
         score_val += 5
         snake_length += 1
-        mixer.music.load("hit.mp3")
-        mixer.music.play(0)
+#         mixer.music.load("hit.mp3")
+#         mixer.music.play(0)
 
     head = []
     head.append(snake_x)
