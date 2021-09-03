@@ -4,3 +4,4 @@ All games created using pygame, mostly arcade games. Very basic games to practic
 
 1. Bricks 
 2. Space invaders
+3. Flappy bird
